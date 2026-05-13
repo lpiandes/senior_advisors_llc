@@ -313,16 +313,6 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.portrait-card::before {
-  position: absolute;
-  inset: 7%;
-  z-index: -1;
-  border-radius: 40px;
-  content: "";
-  background: linear-gradient(135deg, rgba(14, 58, 102, 0.95), rgba(31, 111, 178, 0.5));
-  transform: rotate(-7deg);
-}
-
 .portrait-card img {
   width: 100%;
   aspect-ratio: 0.88;
