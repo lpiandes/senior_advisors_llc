@@ -664,22 +664,22 @@ h3 {
 
 .legal-layout {
   display: grid;
-  grid-template-columns: minmax(210px, 0.34fr) minmax(0, 1fr);
-  gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: start;
+  grid-template-columns: 1fr;
+  gap: 22px;
   padding-top: 28px;
 }
 
 .legal-toc {
-  position: sticky;
-  top: 112px;
-  display: grid;
-  gap: 10px;
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
   padding: 22px;
   border-radius: 28px;
 }
 
 .legal-toc strong {
+  width: 100%;
   margin-bottom: 6px;
   font-size: 0.78rem;
   letter-spacing: 0.16em;
