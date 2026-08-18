@@ -14,7 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=privacy3" />
+    <style>
+      .legal-content,
+      .legal-toc,
+      .legal-hero,
+      .legal-page .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+      }
+    </style>
   </head>
   <body>
     <div class="site-glow site-glow-one"></div>
@@ -74,7 +84,7 @@
           <a href="#contact">Contact us</a>
         </nav>
 
-        <article class="legal-content">
+        <article class="legal-content" style="opacity: 1; transform: none; visibility: visible">
           <section id="who-we-are">
             <h2>1. Who we are</h2>
             <p>
@@ -471,6 +481,11 @@
       </nav>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      document.querySelectorAll(".reveal").forEach((element) => {
+        element.classList.add("is-visible");
+      });
+    </script>
+    <script src="script.js?v=privacy3"></script>
   </body>
 </html>

@@ -15,12 +15,17 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.14,
-    rootMargin: "0px 0px -70px",
+    threshold: 0,
+    rootMargin: "0px 0px -40px",
   },
 );
 
-revealElements.forEach((element) => observer.observe(element));
+revealElements.forEach((element) => {
+  observer.observe(element);
+  if (element.offsetHeight >= window.innerHeight) {
+    element.classList.add("is-visible");
+  }
+});
 
 const updateParallax = () => {
   const scrollY = window.scrollY;

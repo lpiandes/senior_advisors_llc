@@ -692,6 +692,15 @@ h3 {
   font-weight: 700;
 }
 
+.legal-page .reveal,
+.legal-content,
+.legal-toc,
+.legal-hero {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
 .legal-content {
   min-width: 0;
   padding: clamp(1.5rem, 4vw, 2.6rem);
