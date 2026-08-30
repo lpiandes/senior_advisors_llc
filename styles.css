@@ -757,6 +757,92 @@ h3 {
   line-height: 1.8;
 }
 
+.sms-consent-card {
+  max-width: 760px;
+  margin: 0 auto 48px;
+  padding: clamp(1.5rem, 4vw, 2.6rem);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 26px 80px rgba(8, 20, 38, 0.11);
+  backdrop-filter: blur(18px);
+}
+
+.sms-field {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.sms-field label,
+.sms-consent-fieldset legend {
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.sms-field input[type="tel"] {
+  width: 100%;
+  min-height: 56px;
+  padding: 0 18px;
+  border: 1px solid rgba(8, 20, 38, 0.14);
+  border-radius: 16px;
+  color: var(--ink);
+  font: inherit;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.sms-field input[type="tel"]:focus {
+  outline: 2px solid rgba(31, 111, 178, 0.35);
+  outline-offset: 2px;
+}
+
+.sms-consent-fieldset {
+  margin: 0 0 18px;
+  padding: 0;
+  border: 0;
+}
+
+.sms-consent-option {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 14px;
+  align-items: start;
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+.sms-consent-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: var(--blue);
+  cursor: pointer;
+}
+
+.sms-consent-option a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sms-note {
+  margin: 0 0 24px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.sms-form-status {
+  margin: 18px 0 0;
+  color: var(--blue);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .reveal {
   opacity: 0;
   transform: translate3d(0, calc(34px + var(--parallax-offset, 0px)), 0) scale(0.985);
